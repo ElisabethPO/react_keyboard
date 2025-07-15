@@ -2,7 +2,7 @@ import React from 'react';
 import { AppState } from '../types/AppState';
 import { AppProps } from '../types/AppProps';
 
-export class App extends React.Component<Props, State> {
+export class App extends React.Component<AppProps, AppState> {
   state: State = {
     pressedKey: null,
   };
@@ -30,7 +30,7 @@ export class App extends React.Component<Props, State> {
             : 'Nothing was pressed yet'}
         </p>
       </div>
-    )
+    );
   }
 }
 
